@@ -2,6 +2,10 @@
 TN 2026 Elections — Civil / Wealth Dashboard
 Focus: Party-level assets, wealth, disclosures, education, liabilities
 """
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
