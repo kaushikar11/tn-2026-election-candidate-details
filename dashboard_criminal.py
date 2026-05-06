@@ -251,7 +251,6 @@ show_cols = ["party","total_candidates","with_criminal","pct_tainted",
              "total_cases","convicted","serious","special_act","women_court","charges_framed","avg_cases"]
 st.dataframe(
     party_agg[show_cols].style
-        .background_gradient(subset=["pct_tainted","total_cases","serious"], cmap="Reds")
         .format({"pct_tainted":"{:.1f}%","avg_cases":"{:.2f}"}),
     use_container_width=True, height=400,
 )
